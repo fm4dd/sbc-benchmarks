@@ -1,0 +1,8 @@
+sync; dd if=/dev/zero of=./diskio.tmp bs=500K count=1024 (Write Speed)
+1024+0 records in
+1024+0 records out
+524288000 bytes (524 MB) copied, 23.7808 s, 22.0 MB/s
+sync; time dd if=./diskio.tmp of=/dev/null iflag=direct bs=500K count=1024 (Read Speed)
+1024+0 records in
+1024+0 records out
+524288000 bytes (524 MB) copied, 23.364 s, 22.4 MB/s

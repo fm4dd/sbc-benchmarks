@@ -1,0 +1,40 @@
+processor	: 0
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 200.00
+Features	: half thumb fastmult vfp edsp thumbee neon vfpv3 tls vfpd32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+processor	: 1
+model name	: ARMv7 Processor rev 0 (v7l)
+BogoMIPS	: 200.00
+Features	: half thumb fastmult vfp edsp thumbee neon vfpv3 tls vfpd32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc09
+CPU revision	: 0
+
+Hardware	: Altera SOCFPGA
+Revision	: 0000
+Serial		: 0000000000000000
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] CPU: ARMv7 Processor [413fc090] revision 0 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] Memory: 1028120K/1048576K available (7358K kernel code, 528K rwdata, 1836K rodata, 1024K init, 415K bss, 20456K reserved, 0K cma-reserved, 262144K highmem)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+[    0.000770] CPU: Testing write buffer coherency: ok
+[    0.000959] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.002558] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[    0.002633] Brought up 2 CPUs
+[    0.002653] CPU: All CPU(s) started in SVC mode.
+[    0.009166] VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+[    4.503296] ThumbEE CPU extension supported.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 16.04.1 LTS
+Release:	16.04
+Codename:	xenial

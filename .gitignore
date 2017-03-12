@@ -1,0 +1,4 @@
+packages/*
+sbc-bench/bin/*
+sbc-bench/src/lmbench/doc/*
+sbc-bench/src/lmbench/scripts/*

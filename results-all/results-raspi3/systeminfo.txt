@@ -1,0 +1,69 @@
+processor	: 0
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 38.40
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 38.40
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 38.40
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+model name	: ARMv7 Processor rev 4 (v7l)
+BogoMIPS	: 38.40
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: BCM2709
+Revision	: a32082
+Serial		: 00000000098bbb90
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] CPU: ARMv7 Processor [410fd034] revision 4 (ARMv7), cr=10c5383d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] PERCPU: Embedded 13 pages/cpu @bcef6000 s22592 r8192 d22464 u53248
+[    0.000000] Memory: 987784K/1015808K available (6357K kernel code, 432K rwdata, 1716K rodata, 476K init, 764K bss, 19832K reserved, 8192K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.003116] CPU: Testing write buffer coherency: ok
+[    0.052439] CPU0: update cpu_capacity 1024
+[    0.052506] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.054605] CPU1: update cpu_capacity 1024
+[    0.054611] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[    0.055178] CPU2: update cpu_capacity 1024
+[    0.055184] CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+[    0.055702] CPU3: update cpu_capacity 1024
+[    0.055707] CPU3: thread -1, cpu 3, socket 0, mpidr 80000003
+[    0.055768] Brought up 4 CPUs
+[    0.055898] CPU: All CPU(s) started in HYP mode.
+[    0.055924] CPU: Virtualization extensions available.
+[    0.067409] VFP support v0.3: implementor 41 architecture 3 part 40 variant 3 rev 4
+[    0.152002] raspberrypi-firmware soc:firmware: Attached to firmware from 2016-12-09 15:12
+[    0.890981] ledtrig-cpu: registered to indicate activity on CPUs
+Distributor ID:	Raspbian
+Description:	Raspbian GNU/Linux 8.0 (jessie)
+Release:	8.0
+Codename:	jessie

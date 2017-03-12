@@ -1,0 +1,42 @@
+processor	: 0
+model name	: ARMv7 Processor rev 2 (v7l)
+BogoMIPS	: 796.91
+Features	: half thumb fastmult vfp edsp thumbee neon vfpv3 tls vfpd32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x3
+CPU part	: 0xc08
+CPU revision	: 2
+
+Hardware	: Generic AM33XX (Flattened Device Tree)
+Revision	: 0000
+Serial		: 0000000000000000
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] CPU: ARMv7 Processor [413fc082] revision 2 (ARMv7), cr=50c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Memory policy: Data cache writeback
+[    0.000000] CPU: All CPU(s) started in SVC mode.
+[    0.000000] PERCPU: Embedded 13 pages/cpu @df90e000 s24128 r8192 d20928 u53248
+[    0.000000] Memory: 474588K/522240K available (7153K kernel code, 935K rwdata, 3764K rodata, 560K init, 954K bss, 23076K reserved, 24576K cma-reserved, 0K highmem)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=2 to nr_cpu_ids=1.
+[    0.090417] CPU: Testing write buffer coherency: ok
+[    0.173772] CPU0: thread -1, cpu 0, socket -1, mpidr 0
+[    0.268908] Brought up 1 CPUs
+[    0.268945] CPU: All CPU(s) started in SVC mode.
+[    0.292467] VFP support v0.3: implementor 41 architecture 3 part 30 variant c rev 3
+[    3.417687] CPU PMU: Failed to parse /pmu/interrupt-affinity[0]
+[    3.773708] ThumbEE CPU extension supported.
+[    3.850541]  remoteproc0: Booting fw image am335x-pm-firmware.elf, size 219735
+[   12.197976]  remoteproc1: Direct firmware load for am335x-pru0-fw failed with error -2
+[   12.213227]  remoteproc1: Direct firmware load for am335x-pru0-fw failed with error -2
+[   12.213245]  remoteproc1: request_firmware failed: -2
+[   12.497465]  remoteproc1: Direct firmware load for am335x-pru1-fw failed with error -2
+[   12.512584]  remoteproc1: Direct firmware load for am335x-pru1-fw failed with error -2
+[   12.512619]  remoteproc1: request_firmware failed: -2
+[   17.458328] ieee80211 phy0: rt2x00lib_request_firmware: Info - Loading firmware file 'rt2870.bin'
+[   17.465038] ieee80211 phy0: rt2x00lib_request_firmware: Info - Firmware detected - version: 0.29
+Distributor ID:	Ubuntu
+Description:	Ubuntu 14.04.5 LTS
+Release:	14.04
+Codename:	trusty

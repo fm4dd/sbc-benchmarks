@@ -1,0 +1,71 @@
+processor	: 0
+model name	: ARMv7 Processor rev 5 (v7l)
+BogoMIPS	: 38.40
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xc07
+CPU revision	: 5
+
+processor	: 1
+model name	: ARMv7 Processor rev 5 (v7l)
+BogoMIPS	: 38.40
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xc07
+CPU revision	: 5
+
+processor	: 2
+model name	: ARMv7 Processor rev 5 (v7l)
+BogoMIPS	: 38.40
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xc07
+CPU revision	: 5
+
+processor	: 3
+model name	: ARMv7 Processor rev 5 (v7l)
+BogoMIPS	: 38.40
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xc07
+CPU revision	: 5
+
+Hardware	: BCM2709
+Revision	: a01041
+Serial		: 00000000ef1e8da0
+[    0.000000] Booting Linux on physical CPU 0xf00
+[    0.000000] CPU: ARMv7 Processor [410fc075] revision 5 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] PERCPU: Embedded 13 pages/cpu @b5ff2000 s22592 r8192 d22464 u53248
+[    0.000000] Memory: 874104K/901120K available (6357K kernel code, 432K rwdata, 1716K rodata, 476K init, 764K bss, 18824K reserved, 8192K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.003805] CPU: Testing write buffer coherency: ok
+[    0.056296] CPU0: update cpu_capacity 1024
+[    0.056376] CPU0: thread -1, cpu 0, socket 15, mpidr 80000f00
+[    0.059481] CPU1: update cpu_capacity 1024
+[    0.059490] CPU1: thread -1, cpu 1, socket 15, mpidr 80000f01
+[    0.060465] CPU2: update cpu_capacity 1024
+[    0.060473] CPU2: thread -1, cpu 2, socket 15, mpidr 80000f02
+[    0.061303] CPU3: update cpu_capacity 1024
+[    0.061311] CPU3: thread -1, cpu 3, socket 15, mpidr 80000f03
+[    0.061398] Brought up 4 CPUs
+[    0.061543] CPU: All CPU(s) started in HYP mode.
+[    0.061573] CPU: Virtualization extensions available.
+[    0.076099] VFP support v0.3: implementor 41 architecture 2 part 30 variant 7 rev 5
+[    0.720494] raspberrypi-firmware soc:firmware: Attached to firmware from 2016-12-09 15:15
+[    1.913699] ledtrig-cpu: registered to indicate activity on CPUs
+[    8.972256] ieee80211 phy0: rt2x00lib_request_firmware: Info - Loading firmware file 'rt2870.bin'
+[    8.974530] ieee80211 phy0: rt2x00lib_request_firmware: Info - Firmware detected - version: 0.29
+Distributor ID:	Raspbian
+Description:	Raspbian GNU/Linux 8.0 (jessie)
+Release:	8.0
+Codename:	jessie

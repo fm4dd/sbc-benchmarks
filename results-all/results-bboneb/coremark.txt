@@ -1,0 +1,22 @@
+2K performance run parameters for coremark.
+CoreMark Size    : 666
+Total ticks      : 32038
+Total time (secs): 32.038000
+Iterations/Sec   : 2497.034771
+Iterations       : 80000
+Compiler version : GCC4.8.4
+Compiler flags   : -O3 -mcpu=cortex-a8 -mfloat-abi=hard -mfpu=neon  -lrt -lpthread
+Parallel PThreads : 2
+Memory location  : Please put data memory location here
+			(e.g. code in flash, data on heap etc)
+seedcrc          : 0xe9f5
+[0]crclist       : 0xe714
+[1]crclist       : 0xe714
+[0]crcmatrix     : 0x1fd7
+[1]crcmatrix     : 0x1fd7
+[0]crcstate      : 0x8e3a
+[1]crcstate      : 0x8e3a
+[0]crcfinal      : 0x25b5
+[1]crcfinal      : 0x25b5
+Correct operation validated. See readme.txt for run and reporting rules.
+CoreMark 1.0 : 2497.034771 / GCC4.8.4 -O3 -mcpu=cortex-a8 -mfloat-abi=hard -mfpu=neon  -lrt -lpthread / Heap / 2:PThreads
