@@ -55,20 +55,20 @@ Below table translates the identifiers:
 
 | Board             | RAM     |                                       |
 |-------------------|---------|---------------------------------------|
-| Raspberry Pi 1    |  512 MB |
-| Raspberry Pi 2    | 1024 MB |
-| BeagleBone Black  |  512 MB |
-| Altera Cyclone V5 | 1024 MB |
-| Raspberry Pi 3    | 1024 MB |
+| Raspberry Pi 1    |  512 MB | |
+| Raspberry Pi 2    | 1024 MB | |
+| BeagleBone Black  |  512 MB | |
+| Altera Cyclone V5 | 1024 MB | |
+| Raspberry Pi 3    | 1024 MB | |
 
 ## Disk information:
 
-| Board             | Storage Media| 
+| Board             | Storage Media| | 
 |-------------------|--------------|---------------------------------|
-| Raspberry Pi 1    | SD Card Slot |
-| Raspberry Pi 2    | MicroSD Slot |
-| BeagleBone Black  | eMMC         |
-| Altera Cyclone V5 | MicroSD Slot |
-| Raspberry Pi 3    | MicroSD Slot |
+| Raspberry Pi 1    | SD Card Slot | |
+| Raspberry Pi 2    | MicroSD Slot | |
+| BeagleBone Black  | eMMC         | |
+| Altera Cyclone V5 | MicroSD Slot | |
+| Raspberry Pi 3    | MicroSD Slot | |
 
 ## References
