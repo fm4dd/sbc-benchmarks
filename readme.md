@@ -32,6 +32,16 @@ All boards above are equipped with ARM-based CPU. ARM currently dominates the ma
 
 ## SBC Benchmark Results
 
+|System          |Coremark|Coremark/Mhz|Whetstone MIPS|Dhrystone/s|DMIPS/Mhz|Stream Copy|Stream Scale|Disk Read MB/s|Disk Write MB/s|
+|----------------|-------:|-----------:|-------------:|----------:|--------:|----------:|-----------:|-------------:|--------------:|
+|Raspberry Pi 1B |    1357|1.94|82.6|1388889|1.13|770.6|212.3|21.9|10.2|
+|Beaglebone Black|    2497|2.49|485.4|3030303|1.72|562.7|429.3|34.8|13.1|
+|Raspberry Pi 2B |    3097|3.09|487.5|2173913|1.37|1359.5|1411.6|22.4|22.0|
+|Altera Atlas SoC|    6596|7.13|1923.1|3703704|2.28|935.5|1279.6|21.6|21.3|
+|Raspberry Pi 3  |    7108|5.92|2000.0|4347826|2.06|2184.9|2177.3|22.8|10.5|
+
+### Details
+
 - [Coremark](cm-benchmark.md)
 - [Whetstone](ws-benchmark.md)
 - [Dhrystone](ds-benchmark.md)
