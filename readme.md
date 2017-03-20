@@ -12,8 +12,8 @@ The following standard bencharks are currently set up and run by sbc-benchmarks:
 
 The following single-board systems have been tested with sbc-benchmarks:
 
-| Board                  | Vendor                    |  |
-|------------------------|---------------------------|--|
+| Board                  | Vendor                    | Image |
+|------------------------|---------------------------|-------|
 | Raspberry Pi 1B        | <a href="https://www.raspberrypi.org/">Raspberry Pi Foundation</a> | <img src="images/raspi1.png" height="180px" width="240px"> |
 | BeagleBone Black Rev C | <a href="https://beagleboard.org/">BeagleBoard.org Foundation</a>  |  <img src="images/bboard.png" height="180px" width="240px"> |
 | Raspberry Pi 2B        | <a href="https://www.raspberrypi.org/">Raspberry Pi Foundation</a> | |
