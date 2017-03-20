@@ -12,13 +12,15 @@ The following standard bencharks are currently set up and run by sbc-benchmarks:
 
 The following single-board systems have been tested with sbc-benchmarks:
 
-| Board                  | Vendor                    |
-|------------------------|---------------------------|
-| Raspberry Pi 1B        | <a href="https://www.raspberrypi.org/">Raspberry Pi Foundation</a> |
-| BeagleBone Black Rev C | <a href="https://beagleboard.org/">BeagleBoard.org Foundation</a>  |
-| Raspberry Pi 2B        | <a href="https://www.raspberrypi.org/">Raspberry Pi Foundation</a> |
-| DE0-Nano-SoC (Atlas)   | <a href="https://www.altera.com/">Intel PSG (Altera)</a>           |
-| Raspberry Pi 3         | <a href="https://www.raspberrypi.org/">Raspberry Pi Foundation</a> |
+| Board                  | Vendor                    |  |
+|------------------------|---------------------------|--|
+| Raspberry Pi 1B        | <a href="https://www.raspberrypi.org/">Raspberry Pi Foundation</a> | <img src="images/raspi1.png" height="240px" width="320px"> |
+| BeagleBone Black Rev C | <a href="https://beagleboard.org/">BeagleBoard.org Foundation</a>  | |
+| Raspberry Pi 2B        | <a href="https://www.raspberrypi.org/">Raspberry Pi Foundation</a> | |
+| DE0-Nano-SoC (Atlas)   | <a href="https://www.altera.com/">Intel PSG (Altera)</a>           | <img src="images/socfpga.png" height="240px" width="320px"> |
+| Raspberry Pi 3         | <a href="https://www.raspberrypi.org/">Raspberry Pi Foundation</a> | <img src="images/raspi3.png" height="240px" width="320px"> |
+
+<img src="images/Sensor Board - Side Board left.png" height="284px" width="284px">
 
 ## Hardware and Compiler optimization
 
