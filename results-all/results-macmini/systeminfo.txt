@@ -1,0 +1,77 @@
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 15
+model name	: Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
+stepping	: 6
+cpu MHz		: 1000.000
+cache size	: 4096 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 2
+fdiv_bug	: no
+hlt_bug		: no
+f00f_bug	: no
+coma_bug	: no
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 10
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx lm constant_tsc pni monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr lahf_lm
+bogomips	: 4004.36
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 15
+model name	: Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz
+stepping	: 6
+cpu MHz		: 1000.000
+cache size	: 4096 KB
+physical id	: 0
+siblings	: 2
+core id		: 1
+cpu cores	: 2
+fdiv_bug	: no
+hlt_bug		: no
+f00f_bug	: no
+coma_bug	: no
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 10
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx lm constant_tsc pni monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr lahf_lm
+bogomips	: 4000.03
+
+Initializing CPU#0
+Memory: 3081664k/3113780k available (2747k kernel code, 30860k reserved, 958k data, 336k init, 2196276k highmem)
+CPU: After generic identify, caps: bfebfbff 20100000 00000000 00000000 0000e3bd 00000000 00000001
+CPU: L1 I cache: 32K, L1 D cache: 32K
+CPU: L2 cache: 4096K
+CPU: Physical Processor ID: 0
+CPU: Processor Core ID: 0
+CPU: After all inits, caps: bfebfbff 20100000 00000000 00000940 0000e3bd 00000000 00000001
+CPU0: Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz stepping 06
+Initializing CPU#1
+CPU: After generic identify, caps: bfebfbff 20100000 00000000 00000000 0000e3bd 00000000 00000001
+CPU: L1 I cache: 32K, L1 D cache: 32K
+CPU: L2 cache: 4096K
+CPU: Physical Processor ID: 0
+CPU: Processor Core ID: 1
+CPU: After all inits, caps: bfebfbff 20100000 00000000 00000940 0000e3bd 00000000 00000001
+CPU1: Intel(R) Core(TM)2 CPU         T7200  @ 2.00GHz stepping 06
+checking TSC synchronization across 2 CPUs: passed.
+Brought up 2 CPUs
+ACPI: CPU0 (power states: C1[C1] C2[C2])
+ACPI: Processor [CPU0] (supports 8 throttling states)
+ACPI: CPU1 (power states: C1[C1] C2[C2])
+ACPI: Processor [CPU1] (supports 8 throttling states)
+p4-clockmod: Unknown p4-clockmod-capable CPU. Please send an e-mail to <linux@brodo.de>
+p4-clockmod: Unknown p4-clockmod-capable CPU. Please send an e-mail to <linux@brodo.de>
+powernow: This module only works with AMD K7 CPUs
+LSB Version:	core-2.0-noarch:core-3.0-noarch:core-3.1-noarch:core-2.0-ia32:core-3.0-ia32:core-3.1-ia32:cxx-2.0-noarch:cxx-3.0-noarch:cxx-3.1-noarch:cxx-2.0-ia32:cxx-3.0-ia32:cxx-3.1-ia32:graphics-2.0-noarch:graphics-3.0-noarch:graphics-3.1-noarch:graphics-2.0-ia32:graphics-3.0-ia32:graphics-3.1-ia32:desktop-3.1-noarch:desktop-3.1-ia32
+Distributor ID:	Debian
+Description:	Debian GNU/Linux 4.0 (etch)
+Release:	4.0
+Codename:	etch

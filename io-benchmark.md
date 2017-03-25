@@ -24,7 +24,7 @@ The same benchmark was run on the consumer hardware below to provide a frame of 
 
 | System             | OS            | read IO     | write IO     | Medium     |
 | -------------------|---------------|------------:|-------------:|------------|
-| Apple MacMini 2007 | Mac OSX ???   |             |              | 5200RPM HDD|
+| Apple MacMini 2007 | Linux         |   81.3 MB/s |    58.0 MB/s | 5200RPM HDD|
 | Xperia Z4 Tablet   | Android 6.0   |  170.0 MB/s |   106.0 MB/s | 32GB eMMC  |
 | Linode 4GB VM      | Ubuntu 14.04  | 3900.0 MB/s |  1200.0 MB/s | SSD        |
 

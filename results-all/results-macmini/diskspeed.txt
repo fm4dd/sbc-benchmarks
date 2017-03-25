@@ -1,0 +1,6 @@
+256+0 records in
+256+0 records out
+131072000 bytes (131 MB) copied, 0.606972 seconds, 216 MB/s
+256+0 records in
+256+0 records out
+131072000 bytes (131 MB) copied, 1.61212 seconds, 81.3 MB/s

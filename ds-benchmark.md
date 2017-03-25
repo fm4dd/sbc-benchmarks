@@ -27,7 +27,7 @@ The same benchmark was run on below consumer hardware to provide a frame of refe
 
 | System             | CPU              | Arch  |  Mhz | OS            | Dhrystones/s | DMIPS/Mhz |
 | -------------------|------------------|-------|-----:|---------------|-------------:|-----:|
-| Apple MacMini 2007 | Core 2 Duo T7200 | Intel | 2000 | Windows 10 32 |  ???         | ???  |
+| Apple MacMini 2007 | Core 2 Duo T7200 | Intel | 2000 | Linux         |    6666666.5 | 1.90 |
 | Xperia Z4 Tablet   | Snapdragon 810   | ARMv8 | 2000 | Android 6.0   |   14285714.0 | 4.06 |
 | Linode 4GB VM      | Xeon E5-2680 VM  | Intel | 2800 | Ubuntu 14.04  |   17142858.0 | 3.48 |
 
