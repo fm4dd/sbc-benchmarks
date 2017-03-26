@@ -2,7 +2,11 @@
 
 Date: May 2016
 
-## Test commands using cpuminer
+## Background
+
+Cpuminer is a multi-threaded, CPU-optimized miner for Litecoin, Bitcoin, and other cryptocurrencies. It supports and benchmarks SHA-256d and scrypt(N, 1, 1) algorithms. The source is available in github at https://github.com/pooler/cpuminer.
+
+## Test commands
 
 ```
 root@susie:/srv/app/cpuminer/bin# ./minerd --benchmark -a sha256d
@@ -27,3 +31,12 @@ Apple MacMini 2007 | Core 2 Duo T7200 | Intel | 2.0x2 | Windows 10 32 |  5,160 k
 Xperia Z4 Tablet   | Snapdragon 810   | ARMv8 | 2.0x4 | Android 6.0   |  5,088 khash/s |   9.70 khash/s    |
 HP laptop zBook 14 | i7-4600U Haswell | Intel | 2.7x2 | Windows 10 64 | 20,000 khash/s |  36.00 khash/s    |
 Linode 4GB VM      | Xeon E5-2680 VM  | Intel | 2.8x1 | Ubuntu 14.04  | 30,000 khash/s |  48.20 khash/s    |
+
+### Notes
+
+Before compiling Cpuminer, some of the prerequisite SW packages are:
+ - automake
+ - libjansson-dev
+ - libcurl4-openssl-dev
+
+Remember to re-run ./autogen.sh if the packages were added after its first run.
