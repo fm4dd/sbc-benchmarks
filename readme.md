@@ -9,6 +9,7 @@ The following standard bencharks are currently set up and run by sbc-benchmarks:
 - Dhrystone (Integer Performance)
 - Stream    (Memory Performance)
 - dd        (Disk I/O Performance)
+- CPUminer  (Bitcoin/Litecoin mining Performance)
 
 The following single-board systems have been tested with sbc-benchmarks:
 
@@ -47,3 +48,4 @@ All boards above are equipped with ARM-based CPU. ARM currently dominates the ma
 - [Dhrystone](ds-benchmark.md)
 - [Stream](st-benchmark.md)
 - [Disk IO](io-benchmark.md)
+- [CPUminer](bc-benchmark.md)
