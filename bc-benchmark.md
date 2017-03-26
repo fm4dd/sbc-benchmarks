@@ -1,4 +1,4 @@
-# Bitcoin and Litecoin hashing performance tests for single-board systems
+# Cpuminer performance tests for single-board systems
 
 Date: May 2016
 
