@@ -17,6 +17,7 @@ root@susie:~/sbc-bench > bin/whetstone 500000 > results/whetstone.txt
 | System             | CPU              | Arch  | MHz  | OS            |   MIPS |
 | -------------------|------------------|-------|-----:|---------------|-------:|
 | Raspberry Pi 1B    | Broadcom BCM2835 | ARMv6 |  700 | Raspbian 8    |   82.6 |
+| Raspberry Pi 0W    | Broadcom BCM2835 | ARMv6 | 1000 | Raspbian 8    |  118.2 |
 | Beaglebone Black   | AM3359 Cortex-A8 | ARMv7 | 1000 | Ubuntu 14.04  |  485.4 |
 | Raspberry Pi 2B    | Broadcom BCM2836 | ARMv7 |  900 | Raspbian 8    |  487.5 |
 | Altera Atlas SoC   | 5CSEMA4U23C6N A9 | ARMv7 |  925 | Ubuntu 16.04  | 1923.1 |

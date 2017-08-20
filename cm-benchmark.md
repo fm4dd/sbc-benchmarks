@@ -17,6 +17,7 @@ root@susie:~/sbc-bench > bin/coremark > results/coremark.txt
 | System             | CPU              | Arch  | MHz  | OS            | Coremark | Coremark/Mhz |
 | -------------------|------------------|-------|-----:|---------------|---------:|-------------:|
 | Raspberry Pi 1B    | Broadcom BCM2835 | ARMv6 |  700 | Raspbian 8    |     1357 |  1.94 |
+| Raspberry Pi 0W    | Broadcom BCM2835 | ARMv6 | 1000 | Raspbian 8    |     2084 |  2.08 |
 | Beaglebone Black   | AM3359 Cortex-A8 | ARMv7 | 1000 | Ubuntu 14.04  |     2497 |  2.49 |
 | Raspberry Pi 2B    | Broadcom BCM2836 | ARMv7 |  900 | Raspbian 8    |     3097 |  3.09 |
 | Altera Atlas SoC   | 5CSEMA4U23C6N A9 | ARMv7 |  925 | Ubuntu 16.04  |     6596 |  7.13 |

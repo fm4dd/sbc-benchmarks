@@ -1,0 +1,27 @@
+processor	: 0
+model name	: ARMv6-compatible processor rev 7 (v6l)
+BogoMIPS	: 997.08
+Features	: half thumb fastmult vfp edsp java tls 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xb76
+CPU revision	: 7
+
+Hardware	: BCM2708
+Revision	: 9000c1
+Serial		: 00000000b416cc61
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] CPU: ARMv6-compatible processor [410fb767] revision 7 (ARMv7), cr=00c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT nonaliasing instruction cache
+[    0.000000] Memory policy: Data cache writeback
+[    0.000000] Memory: 485236K/507904K available (6063K kernel code, 437K rwdata, 1844K rodata, 376K init, 726K bss, 14476K reserved, 8192K cma-reserved)
+[    0.000000] SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.062328] CPU: Testing write buffer coherency: ok
+[    0.184793] VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
+[    0.253287] raspberrypi-firmware soc:firmware: Attached to firmware from 2017-04-05 11:51
+[    1.053681] ledtrig-cpu: registered to indicate activity on CPUs
+Distributor ID:	Raspbian
+Description:	Raspbian GNU/Linux 8.0 (jessie)
+Release:	8.0
+Codename:	jessie

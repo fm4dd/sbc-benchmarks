@@ -17,6 +17,7 @@ root@susie:~/sbc-bench > bin/dhrystone 100000000 > results/dhrystone.txt
 | System             | CPU              | Arch  | MHz  | OS            | Dhrystones/s | DMIPS/Mhz |
 | -------------------|------------------|-------|-----:|---------------|-------------:|-----:|
 | Raspberry Pi 1B    | Broadcom BCM2835 | ARMv6 |  700 | Raspbian 8    |    1388888.9 | 1.13 |
+| Raspberry Pi 0W    | Broadcom BCM2835 | ARMv6 | 1000 | Raspbian 8    |    2083333.4 | 1.19 |
 | Raspberry Pi 2B    | Broadcom BCM2836 | ARMv7 |  900 | Raspbian 8    |    2173913.0 | 1.37 |
 | Beaglebone Black   | AM3359 Cortex-A8 | ARMv7 | 1000 | Ubuntu 14.04  |    3030303.0 | 1.72 |
 | Raspberry Pi 3     | Broadcom BCM2837 | ARMv8 | 1200 | Raspbian 8    |    4347826.0 | 2.06 |

@@ -14,6 +14,7 @@ root@raspberrypi:/home/pi# sync; dd if=~/test.tmp of=/dev/null iflag=direct bs=5
 | System             | OS            | read IO     | write IO     | Medium       |
 |--------------------|---------------|------------:|-------------:|--------------|
 | Raspberry PI 1B    | Raspbian 8    |   21.9 MB/s |    10.2 MB/s | SD Card      |
+| Raspberry PI 0W    | Raspbian 8    |   22.4 MB/s |     7.1 MB/s | SD Card      |
 | Beaglebone Black   | Ubuntu 14.04  |   34.8 MB/s |    13.1 MB/s | 4GB eMMC     |
 | Raspberry PI 2B    | Raspbian 8    |   22.4 MB/s |    22.0 MB/s | MicroSD Card |
 | Altera Atlas SoC   | Ubuntu 16.04  |   21.6 MB/s |    21.3 MB/s | MicroSD Card |

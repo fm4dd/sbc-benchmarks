@@ -53,22 +53,26 @@ Below table translates the identifiers:
 
 ## Memory information:
 
-| Board             | RAM     |                                       |
+| Board             | RAM     | Type                                  |
 |-------------------|---------|---------------------------------------|
-| Raspberry Pi 1    |  512 MB | |
-| Raspberry Pi 2    | 1024 MB | |
-| BeagleBone Black  |  512 MB | |
-| Altera Cyclone V5 | 1024 MB | |
-| Raspberry Pi 3    | 1024 MB | |
+| Raspberry Pi 1    |  512 MB | LPDDR2 1.2V 450MHz, FBGA168 PoP 32-bit|
+| Raspberry Pi 0W   |  512 MB | LPDDR2 1.2V 450MHz, FBGA168 PoP 32-bit|
+| Raspberry Pi 2    | 1024 MB | LPDDR2 1.2V 450MHz, FBGA168 PoP 32-bit|
+| BeagleBone Black  |  512 MB | DDR3-1600, 400MHz, Micron MT41K256M16HA-125:E |
+| Altera Cyclone V5 | 1024 MB | DDR3, 400Mhz 32-bit, ISSI IS43TR16256A|
+| Raspberry Pi 3    | 1024 MB | LPDDR2 1.2V 900MHz, FBGA168 PoP 64-bit|
+
+```vcgencmd get_config sdram_freq```
 
 ## Disk information:
 
-| Board             | Storage Media| | 
+| Board             | Storage Media| Max Bus Speed| 
 |-------------------|--------------|---------------------------------|
-| Raspberry Pi 1    | SD Card Slot | |
-| Raspberry Pi 2    | MicroSD Slot | |
+| Raspberry Pi 1    | SD Card Slot | 20-25 MB/s|
+| Raspberry Pi 0W   | SD Card Slot | 20-25 MB/s|
+| Raspberry Pi 2    | MicroSD Slot | 20-25 MB/s|
 | BeagleBone Black  | eMMC         | |
 | Altera Cyclone V5 | MicroSD Slot | |
-| Raspberry Pi 3    | MicroSD Slot | |
+| Raspberry Pi 3    | MicroSD Slot | 20-25 MB/s|
 
 ## References

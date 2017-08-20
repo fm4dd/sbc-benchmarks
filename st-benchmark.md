@@ -17,6 +17,7 @@ root@susie:~/sbc-bench > bin/stream > results/stream.txt
 | System             | CPU              | Arch  | MHz  | OS            | Copy  | Scale | Add | Triad |
 | -------------------|------------------|-------|-----:|---------------|------:|------:|-----:|-----:|
 | Raspberry Pi 1B    | Broadcom BCM2835 | ARMv6 |  700 | Raspbian 8    |  770.6 |  212.3 |  311.4 |  296.6 |
+| Raspberry Pi 0W    | Broadcom BCM2835 | ARMv6 | 1000 | Raspbian 8    |  842.5 |  274.4 |  393.6 |  384.6 |
 | Beaglebone Black   | AM3359 Cortex-A8 | ARMv7 | 1000 | Ubuntu 14.04  |  562.7 |  429.3 |  516.2 |  482.7 |
 | Raspberry Pi 2B    | Broadcom BCM2836 | ARMv7 |  900 | Raspbian 8    | 1359.5 | 1411.6 | 1602.7 | 1577.1 |
 | Altera Atlas SoC   | 5CSEMA4U23C6N A9 | ARMv7 |  925 | Ubuntu 16.04  |  935.5 | 1279.6 |  939.0 |  922.4 |
