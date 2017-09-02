@@ -22,6 +22,7 @@ root@susie:~/sbc-bench > bin/whetstone 500000 > results/whetstone.txt
 | Raspberry Pi 2B    | Broadcom BCM2836 | ARMv7 |  900 | Raspbian 8    |  487.5 |
 | Altera Atlas SoC   | 5CSEMA4U23C6N A9 | ARMv7 |  925 | Ubuntu 16.04  | 1923.1 |
 | Raspberry Pi 3     | Broadcom BCM2837 | ARMv8 | 1200 | Raspbian 8    | 2000.0 |
+| NanoPi NEO 2       | Allwinner H5     | ARMv8 | 1500 | Ubuntu 16.04  | 2381.0 |
 
 The same benchmark was run on the consumer hardware below as a frame of reference:
 

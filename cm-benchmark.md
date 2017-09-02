@@ -22,6 +22,7 @@ root@susie:~/sbc-bench > bin/coremark > results/coremark.txt
 | Raspberry Pi 2B    | Broadcom BCM2836 | ARMv7 |  900 | Raspbian 8    |     3097 |  3.09 |
 | Altera Atlas SoC   | 5CSEMA4U23C6N A9 | ARMv7 |  925 | Ubuntu 16.04  |     6596 |  7.13 |
 | Raspberry Pi 3     | Broadcom BCM2837 | ARMv8 | 1200 | Raspbian 8    |     7108 |  5.92 |
+| NanoPi NEO 2       | Allwinner H5     | ARMv8 | 1500 | Ubuntu 16.04  |     3441 |  2.29 |
 
 The same benchmark was run on the consumer systems below to provide a frame of reference:
 

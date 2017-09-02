@@ -25,6 +25,7 @@ echo
 RASPI1FLAGS="-mcpu=arm1176jzf-s -mfloat-abi=hard -mfpu=vfp"
 RASPI2FLAGS="-mcpu=cortex-a7 -mfloat-abi=hard -mfpu=neon-vfpv4"
 RASPI3FLAGS="-mcpu=cortex-a53 -mfloat-abi=hard -mfpu=neon-fp-armv8 -mneon-for-64bits"
+NANO2FLAGS="-mcpu=cortex-a53"
 CYCLV5FLAGS="-mcpu=cortex-a9 -mfloat-abi=hard -mfpu=neon"
 BBONEBFLAGS="-mcpu=cortex-a8 -mfloat-abi=hard -mfpu=neon"
 
@@ -38,7 +39,7 @@ echo -n "CPUHW is $CPUHW and Revision $REVID, "
 case "$CPUHW" in 
   *BCM270*)
     echo "We found a Raspberry Pi."
-    RASPI1=(0002 0003 0004 0005 0006 0007 0008 0009 000d 000e 000f)
+    RASPI1=(0002 0003 0004 0005 0006 0007 0008 0009 000d 000e 000f 9000c1)
     RASPI2=(a01040 a01041 a21041)
     RASPI3=(a02082 a020a0 a22082 a32082)
     case "${RASPI1[@]}" in *"$REVID"*) echo "It's a Raspberry Pi with ARMv6 CPU"; SYSFLAGS="$RASPI1FLAGS" ;; esac
@@ -50,9 +51,23 @@ case "$CPUHW" in
     echo "We found a BeagleBone Black."
     SYSFLAGS="$BBONEBFLAGS"
     ;;
-  *SOCFPGA*)
-    echo "We found a Altera SoC FPGA."
-    SYSFLAGS="$CYCLV5FLAGS"
+  *sun50iw1p1)
+    echo "We found a NanoPi 2."
+    ARCH=`uname -m`
+    if [ "$ARCH" == "aarch64" ]; then
+       SYSFLAGS="$NANO2FLAGS"
+       export AM_CFLAGS="-march=armv8-a -mtune=cortex-a53"
+    else SYSFLAGS="$RASPI3FLAGS"
+    fi
+    ;;
+  *Allwinnersun50iw2Family)
+    echo "We found a NanoPi 2."
+    ARCH=`uname -m`
+    if [ "$ARCH" == "aarch64" ]; then
+       SYSFLAGS="$NANO2FLAGS"
+       export AM_CFLAGS="-march=armv8-a -mtune=cortex-a53"
+    else SYSFLAGS="$RASPI3FLAGS"
+    fi
     ;;
   *)
     echo "We found a unknown board, exiting."
@@ -72,9 +87,15 @@ cd $SRCDIR
 echo "run make clean before build:"
 unset XCFLAGS
 unset PORT_DIR
-make PORT_DIR=linux clean
-echo "make compile PORT_DIR=linux XCFLAGS=$SYSFLAGS"
-make compile PORT_DIR=linux XCFLAGS="$SYSFLAGS"
+if [ "$ARCH" == "aarch64" ]; then
+   make PORT_DIR=linux64 clean
+   echo "make compile PORT_DIR=linux64 XCFLAGS=$SYSFLAGS"
+   make compile PORT_DIR=linux64 XCFLAGS="$SYSFLAGS"
+else
+   make PORT_DIR=linux clean
+   echo "make compile PORT_DIR=linux XCFLAGS=$SYSFLAGS"
+   make compile PORT_DIR=linux XCFLAGS="$SYSFLAGS"
+fi
 ls -l coremark
 cp coremark ../../bin
 cd ../../

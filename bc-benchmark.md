@@ -18,10 +18,12 @@ root@susie:/srv/app/cpuminer/bin# ./minerd --benchmark
 System             | CPU              | Arch  | GHz   | OS            |  sha256d (BTC) | scrypt (Litecoin) |
 -------------------|------------------|-------|-------|---------------|---------------:|------------------:|
 Raspberry Pi 1B    | Broadcom BCM2835 | ARMv6 | 0.7x1 | Raspbian 8    |    171 khash/s |    .28 khash/s    |
+Raspberry Pi 0W    | Broadcom BCM2835 | ARMv6 | 1.0x1 | Raspbian 8    |    289 khash/s |    .50 khash/s    |
 Beaglebone Black   | AM3359 Cortex-A8 | ARMv7 | 1.0x1 | Ubuntu 14.04  |    561 khash/s |    .72 khash/s    |
 Raspberry Pi 2B    | Broadcom BCM2836 | ARMv7 | 0.9x4 | Raspbian 8    |    727 khash/s |   1.12 khash/s    |
 Altera Atlas SoC   | 5CSEMA4U23C6N A9 | ARMv7 | 0.9x2 | Ubuntu 16.04  |  1,016 khash/s |   1.71 khash/s    |
 Raspberry Pi 3B    | Broadcom BCM2837 | ARMv8 | 1.2x4 | Raspbian 8    |  1,407 khash/s |   2.54 khash/s    |
+NanoPi NEO 2       | Allwinner H5     | ARMv8 | 1.5x4 | Ubuntu 16.04  |  1,818 khash/s |   3.13 khash/s    |
 
 The same benchmark was run on the consumer hardware below to provide a frame of reference:
 

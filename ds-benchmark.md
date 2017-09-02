@@ -20,6 +20,7 @@ root@susie:~/sbc-bench > bin/dhrystone 100000000 > results/dhrystone.txt
 | Raspberry Pi 0W    | Broadcom BCM2835 | ARMv6 | 1000 | Raspbian 8    |    2083333.4 | 1.19 |
 | Raspberry Pi 2B    | Broadcom BCM2836 | ARMv7 |  900 | Raspbian 8    |    2173913.0 | 1.37 |
 | Beaglebone Black   | AM3359 Cortex-A8 | ARMv7 | 1000 | Ubuntu 14.04  |    3030303.0 | 1.72 |
+| NanoPi NEO 2       | Allwinner H5     | ARMv8 | 1500 | Ubuntu 16.04  |    5000000.0 | 1.89 |
 | Raspberry Pi 3     | Broadcom BCM2837 | ARMv8 | 1200 | Raspbian 8    |    4347826.0 | 2.06 |
 | Altera Atlas SoC   | 5CSEMA4U23C6N A9 | ARMv7 |  925 | Ubuntu 16.04  |    3703703.8 | 2.28 |
 

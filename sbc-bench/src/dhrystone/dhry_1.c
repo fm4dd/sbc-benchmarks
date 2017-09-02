@@ -16,6 +16,7 @@
  */
 
 #include <string.h>
+#include <stdlib.h>
 #include "dhry.h"
 
 /* Global Variables: */
@@ -32,6 +33,11 @@ int             Arr_2_Glob [50] [50];
 Enumeration     Func_1 ();
   /* forward declaration necessary since Enumeration may not simply be int */
 
+Boolean Func_2 (char[], char[]);
+void Proc_6 (Enumeration, Enumeration *);
+void Proc_7 (int, int, int *);
+void Proc_8 (int*, int(*)[], int, int);
+
 #ifndef REG
         Boolean Reg = false;
 #define REG
@@ -45,7 +51,7 @@ Enumeration     Func_1 ();
 
 #ifdef TIMES
 struct tms      time_info;
-//extern  int     times ();
+extern  int     times ();
                 /* see library function "times" */
 #define Too_Small_Time 120
                 /* Measurements should last at least about 2 seconds */
@@ -65,6 +71,108 @@ float           Microseconds,
 
 /* end of variables for time measurement */
 
+void Proc_3 (Ptr_Ref_Par)
+/******************/
+    /* executed once */
+    /* Ptr_Ref_Par becomes Ptr_Glob */
+
+Rec_Pointer *Ptr_Ref_Par;
+
+{
+  if (Ptr_Glob != Null)
+    /* then, executed */
+    *Ptr_Ref_Par = Ptr_Glob->Ptr_Comp;
+  Proc_7 (10, Int_Glob, &Ptr_Glob->variant.var_1.Int_Comp);
+} /* Proc_3 */
+
+void Proc_1 (Ptr_Val_Par)
+/******************/
+
+REG Rec_Pointer Ptr_Val_Par;
+    /* executed once */
+{
+  REG Rec_Pointer Next_Record = Ptr_Val_Par->Ptr_Comp;  
+                                        /* == Ptr_Glob_Next */
+  /* Local variable, initialized with Ptr_Val_Par->Ptr_Comp,    */
+  /* corresponds to "rename" in Ada, "with" in Pascal           */
+  
+  structassign (*Ptr_Val_Par->Ptr_Comp, *Ptr_Glob); 
+  Ptr_Val_Par->variant.var_1.Int_Comp = 5;
+  Next_Record->variant.var_1.Int_Comp 
+        = Ptr_Val_Par->variant.var_1.Int_Comp;
+  Next_Record->Ptr_Comp = Ptr_Val_Par->Ptr_Comp;
+  Proc_3 (&Next_Record->Ptr_Comp);
+    /* Ptr_Val_Par->Ptr_Comp->Ptr_Comp 
+                        == Ptr_Glob->Ptr_Comp */
+  if (Next_Record->Discr == Ident_1)
+    /* then, executed */
+  {
+    Next_Record->variant.var_1.Int_Comp = 6;
+    Proc_6 (Ptr_Val_Par->variant.var_1.Enum_Comp, 
+           &Next_Record->variant.var_1.Enum_Comp);
+    Next_Record->Ptr_Comp = Ptr_Glob->Ptr_Comp;
+    Proc_7 (Next_Record->variant.var_1.Int_Comp, 10, 
+           &Next_Record->variant.var_1.Int_Comp);
+  }
+  else /* not executed */
+    structassign (*Ptr_Val_Par, *Ptr_Val_Par->Ptr_Comp);
+} /* Proc_1 */
+
+void Proc_2 (Int_Par_Ref)
+/******************/
+    /* executed once */
+    /* *Int_Par_Ref == 1, becomes 4 */
+
+One_Fifty   *Int_Par_Ref;
+{
+  One_Fifty  Int_Loc;  
+  Enumeration   Enum_Loc;
+
+  Int_Loc = *Int_Par_Ref + 10;
+  do /* executed once */
+    if (Ch_1_Glob == 'A')
+      /* then, executed */
+    {
+      Int_Loc -= 1;
+      *Int_Par_Ref = Int_Loc - Int_Glob;
+      Enum_Loc = Ident_1;
+    } /* if */
+  while (Enum_Loc != Ident_1); /* true */
+} /* Proc_2 */
+
+
+void Proc_4 () /* without parameters */
+/*******/
+    /* executed once */
+{
+  Boolean Bool_Loc;
+
+  Bool_Loc = Ch_1_Glob == 'A';
+  Bool_Glob = Bool_Loc | Bool_Glob;
+  Ch_2_Glob = 'B';
+} /* Proc_4 */
+
+
+void Proc_5 () /* without parameters */
+/*******/
+    /* executed once */
+{
+  Ch_1_Glob = 'A';
+  Bool_Glob = false;
+} /* Proc_5 */
+
+
+        /* Procedure for the assignment of structures,          */
+        /* if the C compiler doesn't support this feature       */
+#ifdef  NOSTRUCTASSIGN
+memcpy (d, s, l)
+register char   *d;
+register char   *s;
+register int    l;
+{
+        while (l--) *d++ = *s++;
+}
+#endif
 
 void main(int argc, char *argv[])
 /*****/
@@ -277,111 +385,3 @@ void main(int argc, char *argv[])
   }
   
 }
-
-
-Proc_1 (Ptr_Val_Par)
-/******************/
-
-REG Rec_Pointer Ptr_Val_Par;
-    /* executed once */
-{
-  REG Rec_Pointer Next_Record = Ptr_Val_Par->Ptr_Comp;  
-                                        /* == Ptr_Glob_Next */
-  /* Local variable, initialized with Ptr_Val_Par->Ptr_Comp,    */
-  /* corresponds to "rename" in Ada, "with" in Pascal           */
-  
-  structassign (*Ptr_Val_Par->Ptr_Comp, *Ptr_Glob); 
-  Ptr_Val_Par->variant.var_1.Int_Comp = 5;
-  Next_Record->variant.var_1.Int_Comp 
-        = Ptr_Val_Par->variant.var_1.Int_Comp;
-  Next_Record->Ptr_Comp = Ptr_Val_Par->Ptr_Comp;
-  Proc_3 (&Next_Record->Ptr_Comp);
-    /* Ptr_Val_Par->Ptr_Comp->Ptr_Comp 
-                        == Ptr_Glob->Ptr_Comp */
-  if (Next_Record->Discr == Ident_1)
-    /* then, executed */
-  {
-    Next_Record->variant.var_1.Int_Comp = 6;
-    Proc_6 (Ptr_Val_Par->variant.var_1.Enum_Comp, 
-           &Next_Record->variant.var_1.Enum_Comp);
-    Next_Record->Ptr_Comp = Ptr_Glob->Ptr_Comp;
-    Proc_7 (Next_Record->variant.var_1.Int_Comp, 10, 
-           &Next_Record->variant.var_1.Int_Comp);
-  }
-  else /* not executed */
-    structassign (*Ptr_Val_Par, *Ptr_Val_Par->Ptr_Comp);
-} /* Proc_1 */
-
-
-Proc_2 (Int_Par_Ref)
-/******************/
-    /* executed once */
-    /* *Int_Par_Ref == 1, becomes 4 */
-
-One_Fifty   *Int_Par_Ref;
-{
-  One_Fifty  Int_Loc;  
-  Enumeration   Enum_Loc;
-
-  Int_Loc = *Int_Par_Ref + 10;
-  do /* executed once */
-    if (Ch_1_Glob == 'A')
-      /* then, executed */
-    {
-      Int_Loc -= 1;
-      *Int_Par_Ref = Int_Loc - Int_Glob;
-      Enum_Loc = Ident_1;
-    } /* if */
-  while (Enum_Loc != Ident_1); /* true */
-} /* Proc_2 */
-
-
-Proc_3 (Ptr_Ref_Par)
-/******************/
-    /* executed once */
-    /* Ptr_Ref_Par becomes Ptr_Glob */
-
-Rec_Pointer *Ptr_Ref_Par;
-
-{
-  if (Ptr_Glob != Null)
-    /* then, executed */
-    *Ptr_Ref_Par = Ptr_Glob->Ptr_Comp;
-  Proc_7 (10, Int_Glob, &Ptr_Glob->variant.var_1.Int_Comp);
-} /* Proc_3 */
-
-
-Proc_4 () /* without parameters */
-/*******/
-    /* executed once */
-{
-  Boolean Bool_Loc;
-
-  Bool_Loc = Ch_1_Glob == 'A';
-  Bool_Glob = Bool_Loc | Bool_Glob;
-  Ch_2_Glob = 'B';
-} /* Proc_4 */
-
-
-Proc_5 () /* without parameters */
-/*******/
-    /* executed once */
-{
-  Ch_1_Glob = 'A';
-  Bool_Glob = false;
-} /* Proc_5 */
-
-
-        /* Procedure for the assignment of structures,          */
-        /* if the C compiler doesn't support this feature       */
-#ifdef  NOSTRUCTASSIGN
-memcpy (d, s, l)
-register char   *d;
-register char   *s;
-register int    l;
-{
-        while (l--) *d++ = *s++;
-}
-#endif
-
-

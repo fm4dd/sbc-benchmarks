@@ -21,6 +21,7 @@ The following single-board systems have been tested with sbc-benchmarks:
 | Raspberry Pi 2B        | <a href="https://www.raspberrypi.org/">Raspberry Pi Foundation</a> | |
 | DE0-Nano-SoC (Atlas)   | <a href="https://www.altera.com/">Intel PSG (Altera)</a>           | <img src="images/socfpga.png" height="180px" width="240px"> |
 | Raspberry Pi 3         | <a href="https://www.raspberrypi.org/">Raspberry Pi Foundation</a> | <img src="images/raspi3.png" height="180px" width="240px"> |
+| NanoPi NEO 2           | <a href="http://wiki.friendlyarm.com/">FriendlyElec</a> | <img src="images/nanopi2.png" height="180px" width="240px"> |
 
 ## Hardware and Compiler optimization
 
@@ -36,12 +37,13 @@ All boards above are equipped with ARM-based CPU. ARM currently dominates the ma
 
 |System          |Core Mark|C-Mark Mhz|Whetstone|Dhrystone|DMIPS|Stream Copy|Stream Scale|Disk Read|Disk Write|
 |----------------|--------:|---------:|--------:|--------:|----:|----------:|-----------:|--------:|---------:|
-|Raspberry Pi 1B |    1357|1.94|82.6|1388889|1.13|770.6|212.3|21.9|10.2|
-|Raspberry Pi 0W |    2084|2.08|118.2|2083333|1.19|842.5|274.4|22.4|7.1|
-|Beaglebone Black|    2497|2.49|485.4|3030303|1.72|562.7|429.3|34.8|13.1|
-|Raspberry Pi 2B |    3097|3.09|487.5|2173913|1.37|1359.5|1411.6|22.4|22.0|
-|Altera Atlas SoC|    6596|7.13|1923.1|3703704|2.28|935.5|1279.6|21.6|21.3|
-|Raspberry Pi 3  |    7108|5.92|2000.0|4347826|2.06|2184.9|2177.3|22.8|10.5|
+|Raspberry Pi 1B |     1357|      1.94|     82.6|  1388889| 1.13|      770.6|       212.3|     21.9|      10.2|
+|Raspberry Pi 0W |     2084|      2.08|    118.2|  2083333| 1.19|      842.5|       274.4|     22.4|       7.1|
+|Beaglebone Black|     2497|      2.49|    485.4|  3030303| 1.72|      562.7|       429.3|     34.8|      13.1|
+|Raspberry Pi 2B |     3097|      3.09|    487.5|  2173913| 1.37|     1359.5|      1411.6|     22.4|      22.0|
+|Altera Atlas SoC|     6596|      7.13|   1923.1|  3703704| 2.28|      935.5|      1279.6|     21.6|      21.3|
+|Raspberry Pi 3  |     7108|      5.92|   2000.0|  4347826| 2.06|     2184.9|      2177.3|     22.8|      10.5|
+|NanoPi NEO 2    |     3442|      2.29|   2381.0|  5000000| 1.89|     1848.4|      1875.8|     21.8|      21.6|
 
 ### Details
 

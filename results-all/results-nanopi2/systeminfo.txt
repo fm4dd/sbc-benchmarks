@@ -1,0 +1,63 @@
+processor	: 0
+Processor	: AArch64 Processor rev 4 (aarch64)
+Hardware	: sun50iw1p1
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+Processor	: AArch64 Processor rev 4 (aarch64)
+Hardware	: sun50iw1p1
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+Processor	: AArch64 Processor rev 4 (aarch64)
+Hardware	: sun50iw1p1
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+Processor	: AArch64 Processor rev 4 (aarch64)
+Hardware	: sun50iw1p1
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Boot CPU: AArch64 Processor [410fd034]
+[    0.000000] psci: PSCIv0.2 detected in firmware.
+[    0.000000] Detected VIPT I-cache on CPU0
+[    0.000000] CPU features: enabling workaround for ARM erratum 845719
+[    0.000000] Memory: 475432K/524288K available (7806K kernel code, 570K rwdata, 2496K rodata, 448K init, 303K bss, 32472K reserved, 16384K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.002716] smp: Bringing up secondary CPUs ...
+[    0.003829] Detected VIPT I-cache on CPU1
+[    0.003885] CPU1: Booted secondary processor [410fd034]
+[    0.004599] Detected VIPT I-cache on CPU2
+[    0.004628] CPU2: Booted secondary processor [410fd034]
+[    0.005306] Detected VIPT I-cache on CPU3
+[    0.005331] CPU3: Booted secondary processor [410fd034]
+[    0.005380] smp: Brought up 1 node, 4 CPUs
+[    0.005502] CPU features: detected feature: 32-bit EL0 Support
+[    0.005563] CPU: All CPU(s) started at EL2
+[    2.348841] cacheinfo: Unable to detect cache hierarchy for CPU 0
+[    2.943832] ledtrig-cpu: registered to indicate activity on CPUs

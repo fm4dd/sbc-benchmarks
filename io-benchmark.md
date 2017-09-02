@@ -19,6 +19,7 @@ root@raspberrypi:/home/pi# sync; dd if=~/test.tmp of=/dev/null iflag=direct bs=5
 | Raspberry PI 2B    | Raspbian 8    |   22.4 MB/s |    22.0 MB/s | MicroSD Card |
 | Altera Atlas SoC   | Ubuntu 16.04  |   21.6 MB/s |    21.3 MB/s | MicroSD Card |
 | Raspberry PI 3B    | Raspbian 8    |   22.8 MB/s |    10.5 MB/s | MicroSD Card |
+| NanoPi NEO 2       | Ubuntu 16.04  |   21.8 MB/s |    21.8 MB/s | MicroSD Card |
 
 
 The same benchmark was run on the consumer hardware below to provide a frame of reference:

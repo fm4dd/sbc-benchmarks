@@ -8,13 +8,13 @@ OUTFLAG= -o
 CC = gcc
 # Flag: CFLAGS
 #	Use this flag to define compiler options. Note, you can add compiler options from the command line using XCFLAGS="other flags"
-PORT_CFLAGS = -O2
+PORT_CFLAGS = -O3
 FLAGS_STR = "$(PORT_CFLAGS) $(XCFLAGS) $(XLFLAGS) $(LFLAGS_END)"
 CFLAGS = $(PORT_CFLAGS) -I$(PORT_DIR) -I. -DFLAGS_STR=\"$(FLAGS_STR)\"
 #Flag: LFLAGS_END
 #	Define any libraries needed for linking or other flags that should come at the end of the link line (e.g. linker scripts). 
 #	Note: On certain platforms, the default clock_gettime implementation is supported but requires linking of librt.
-LFLAGS_END += -lrt
+LFLAGS_END += -lrt -lpthread
 # Flag: PORT_SRCS
 # Port specific source files can be added here
 PORT_SRCS = $(PORT_DIR)/core_portme.c

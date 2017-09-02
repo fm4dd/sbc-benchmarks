@@ -1,0 +1,62 @@
+processor	: 0
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 1
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 2
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+processor	: 3
+BogoMIPS	: 48.00
+Features	: fp asimd evtstrm aes pmull sha1 sha2 crc32 cpuid
+CPU implementer	: 0x41
+CPU architecture: 8
+CPU variant	: 0x0
+CPU part	: 0xd03
+CPU revision	: 4
+
+Hardware	: Allwinnersun50iw2Family
+Revision	: 0000
+Serial		: 0000000000000000
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Boot CPU: AArch64 Processor [410fd034]
+[    0.000000] psci: PSCIv0.2 detected in firmware.
+[    0.000000] Detected VIPT I-cache on CPU0
+[    0.000000] CPU features: enabling workaround for ARM erratum 845719
+[    0.000000] Memory: 472496K/524288K available (8254K kernel code, 590K rwdata, 2768K rodata, 448K init, 393K bss, 35408K reserved, 16384K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.001918] smp: Bringing up secondary CPUs ...
+[    0.002899] Detected VIPT I-cache on CPU1
+[    0.002951] CPU1: Booted secondary processor [410fd034]
+[    0.003608] Detected VIPT I-cache on CPU2
+[    0.003636] CPU2: Booted secondary processor [410fd034]
+[    0.004321] Detected VIPT I-cache on CPU3
+[    0.004347] CPU3: Booted secondary processor [410fd034]
+[    0.004400] smp: Brought up 1 node, 4 CPUs
+[    0.004429] CPU features: detected feature: 32-bit EL0 Support
+[    0.004478] CPU: All CPU(s) started at EL2
+[    1.320072] cacheinfo: Unable to detect cache hierarchy for CPU 0
+[    1.639011] ledtrig-cpu: registered to indicate activity on CPUs
+Distributor ID:	Ubuntu
+Description:	Ubuntu 16.04.3 LTS
+Release:	16.04
+Codename:	xenial

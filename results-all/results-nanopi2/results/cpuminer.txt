@@ -1,0 +1,63 @@
+root@NanoPi-NEO2:/home/pi/cpuminer# ./minerd --benchmark -a sha256d
+[2017-09-02 04:30:07] Binding thread 0 to cpu 0
+[2017-09-02 04:30:07] Binding thread 1 to cpu 1
+[2017-09-02 04:30:07] Binding thread 2 to cpu 2
+[2017-09-02 04:30:07] 4 miner threads started, using 'sha256d' algorithm.
+[2017-09-02 04:30:07] Binding thread 3 to cpu 3
+[2017-09-02 04:30:12] thread 1: 2097152 hashes, 440.76 khash/s
+[2017-09-02 04:30:12] thread 3: 2097152 hashes, 440.37 khash/s
+[2017-09-02 04:30:12] thread 2: 2097152 hashes, 440.12 khash/s
+[2017-09-02 04:30:12] thread 0: 2097152 hashes, 439.31 khash/s
+[2017-09-02 04:30:17] thread 3: 2201859 hashes, 455.03 khash/s
+[2017-09-02 04:30:17] Total: 1775 khash/s
+[2017-09-02 04:30:17] thread 2: 2200587 hashes, 454.79 khash/s
+[2017-09-02 04:30:17] thread 1: 2203790 hashes, 454.62 khash/s
+[2017-09-02 04:30:17] thread 0: 2196531 hashes, 454.22 khash/s
+[2017-09-02 04:30:22] thread 1: 2273107 hashes, 455.63 khash/s
+[2017-09-02 04:30:22] thread 2: 2273954 hashes, 454.12 khash/s
+[2017-09-02 04:30:22] thread 3: 2275160 hashes, 454.12 khash/s
+[2017-09-02 04:30:22] Total: 1818 khash/s
+[2017-09-02 04:30:22] thread 0: 2271096 hashes, 453.97 khash/s
+[2017-09-02 04:30:27] thread 1: 2278168 hashes, 454.70 khash/s
+[2017-09-02 04:30:27] thread 2: 2270620 hashes, 454.38 khash/s
+[2017-09-02 04:30:27] thread 3: 2270600 hashes, 454.19 khash/s
+[2017-09-02 04:30:27] Total: 1817 khash/s
+[2017-09-02 04:30:27] thread 0: 2269860 hashes, 453.90 khash/s
+[2017-09-02 04:30:32] thread 2: 2271876 hashes, 454.54 khash/s
+[2017-09-02 04:30:32] thread 1: 2273506 hashes, 454.47 khash/s
+[2017-09-02 04:30:32] thread 3: 2270949 hashes, 454.37 khash/s
+[2017-09-02 04:30:32] Total: 1817 khash/s
+[2017-09-02 04:30:32] thread 0: 2269519 hashes, 453.63 khash/s
+^C
+root@NanoPi-NEO2:/home/pi/cpuminer# ./minerd --benchmark
+[2017-09-02 04:30:40] Binding thread 0 to cpu 0
+[2017-09-02 04:30:40] Binding thread 1 to cpu 1
+[2017-09-02 04:30:40] Binding thread 2 to cpu 2
+[2017-09-02 04:30:40] 4 miner threads started, using 'scrypt' algorithm.
+[2017-09-02 04:30:40] Binding thread 3 to cpu 3
+[2017-09-02 04:30:46] thread 2: 4096 hashes, 0.77 khash/s
+[2017-09-02 04:30:46] thread 0: 4096 hashes, 0.77 khash/s
+[2017-09-02 04:30:46] thread 1: 4096 hashes, 0.77 khash/s
+[2017-09-02 04:30:46] thread 3: 4096 hashes, 0.77 khash/s
+[2017-09-02 04:30:46] Total: 3.08 khash/s
+[2017-09-02 04:30:50] thread 2: 3851 hashes, 0.78 khash/s
+[2017-09-02 04:30:51] thread 0: 3845 hashes, 0.78 khash/s
+[2017-09-02 04:30:51] thread 1: 3846 hashes, 0.78 khash/s
+[2017-09-02 04:30:51] thread 3: 3835 hashes, 0.78 khash/s
+[2017-09-02 04:30:51] Total: 3.13 khash/s
+[2017-09-02 04:30:51] thread 2: 784 hashes, 0.78 khash/s
+[2017-09-02 04:30:56] thread 0: 3913 hashes, 0.78 khash/s
+[2017-09-02 04:30:56] thread 1: 3913 hashes, 0.78 khash/s
+[2017-09-02 04:30:56] thread 3: 3903 hashes, 0.78 khash/s
+[2017-09-02 04:30:56] Total: 3.13 khash/s
+[2017-09-02 04:30:56] thread 2: 3918 hashes, 0.78 khash/s
+[2017-09-02 04:31:01] thread 0: 3912 hashes, 0.78 khash/s
+[2017-09-02 04:31:01] thread 1: 3913 hashes, 0.78 khash/s
+[2017-09-02 04:31:01] thread 3: 3903 hashes, 0.78 khash/s
+[2017-09-02 04:31:01] Total: 3.13 khash/s
+[2017-09-02 04:31:01] thread 2: 3921 hashes, 0.78 khash/s
+[2017-09-02 04:31:06] thread 0: 3914 hashes, 0.78 khash/s
+[2017-09-02 04:31:06] thread 1: 3913 hashes, 0.78 khash/s
+[2017-09-02 04:31:06] thread 3: 3904 hashes, 0.78 khash/s
+[2017-09-02 04:31:06] Total: 3.13 khash/s
+[2017-09-02 04:31:06] thread 2: 3921 hashes, 0.78 khash/s
