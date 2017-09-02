@@ -16,7 +16,7 @@ The following single-board systems have been tested with sbc-benchmarks:
 | Board                  | Vendor                    | Image |
 |------------------------|---------------------------|-------|
 | Raspberry Pi 1B        | <a href="https://www.raspberrypi.org/">Raspberry Pi Foundation</a> | <img src="images/raspi1.png" height="180px" width="240px"> |
-| Raspberry Pi 0W        | <a href="https://www.raspberrypi.org/">Raspberry Pi Foundation</a> | |
+| Raspberry Pi 0W        | <a href="https://www.raspberrypi.org/">Raspberry Pi Foundation</a> | <img src="images/raspi0w.png" height="180px" width="240px"> |
 | BeagleBone Black Rev C | <a href="https://beagleboard.org/">BeagleBoard.org Foundation</a>  |  <img src="images/bboard.png" height="180px" width="240px"> |
 | Raspberry Pi 2B        | <a href="https://www.raspberrypi.org/">Raspberry Pi Foundation</a> | |
 | DE0-Nano-SoC (Atlas)   | <a href="https://www.altera.com/">Intel PSG (Altera)</a>           | <img src="images/socfpga.png" height="180px" width="240px"> |
