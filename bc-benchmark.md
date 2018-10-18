@@ -29,6 +29,7 @@ The same benchmark was run on the consumer hardware below to provide a frame of 
 
 System             | CPU              | Arch  | GHz   | OS            |  sha256d (BTC) | scrypt (Litecoin) |
 -------------------|------------------|-------|-------|---------------|---------------:|------------------:|
+MS Surface Go 8GB  | Pentium 4415Y    | Intel | 1.6x2 | Ubuntu 16.04  |  4,970 kHash/s |   9.38 kHash/s    |
 Apple MacMini 2007 | Core 2 Duo T7200 | Intel | 2.0x2 | Windows 10 32 |  5,160 khash/s |   6.15 khash/s    |
 Xperia Z4 Tablet   | Snapdragon 810   | ARMv8 | 2.0x4 | Android 6.0   |  5,088 khash/s |   9.70 khash/s    |
 HP laptop zBook 14 | i7-4600U Haswell | Intel | 2.7x2 | Windows 10 64 | 20,000 khash/s |  36.00 khash/s    |
