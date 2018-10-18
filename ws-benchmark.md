@@ -30,4 +30,5 @@ The same benchmark was run on the consumer hardware below as a frame of referenc
 | -------------------|------------------|-------|-----:|---------------|-------:|
 | Apple MacMini 2007 | Core 2 Duo T7200 | Intel | 2000 | Linux         | 4166.7 |
 | Xperia Z4 Tablet   | Snapdragon 810   | ARMv8 | 2000 | Android 6.0   | 4545.5 |
+| MS Surface Go      | Pentium 4415Y    | Intel | 1600 | Ubuntu 16.04  | 3333.3 |
 | Linode 4GB VM      | Xeon E5-2680 VM  | Intel | 2800 | Ubuntu 14.04  | 5000.0 |

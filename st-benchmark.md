@@ -28,9 +28,10 @@ The same benchmark was run on the consumer hardware below to provide a frame of 
 
 | System             | CPU              | Arch  | MHz  | OS            | Copy  | Scale | Add | Triad |
 | -------------------|------------------|-------|-----:|---------------|------:|------:|-----:|-----:|
-| Apple MacMini 2007 | Core 2 Duo T7200 | Intel | 2000 | Linux         | 2427.1 |  2404.0 |  2662.6 |  2645.0 |
-| Xperia Z4 Tablet   | Snapdragon 810   | ARMv8 | 2000 | Android 6.0   | 8726.0 | 10904.4 |  9009.0 |  9353.4 |
-| Linode 4GB VM      | Xeon E5-2680 VM  | Intel | 2800 | Ubuntu 14.04  | 9691.7 | 10193.7 | 13994.9 | 14472.3 |
+| Apple MacMini 2007 | Core 2 Duo T7200 | Intel | 2000 | Linux         |  2427.1 |  2404.0 |  2662.6 |  2645.0 |
+| Xperia Z4 Tablet   | Snapdragon 810   | ARMv8 | 2000 | Android 6.0   |  8726.0 | 10904.4 |  9009.0 |  9353.4 |
+| MS Surface Go 8GB  | Pentium 4415Y    | Intel | 1600 | Ubuntu 16.04  | 22060.0 | 14749.2 | 16074.0 | 16064.2 |
+| Linode 4GB VM      | Xeon E5-2680 VM  | Intel | 2800 | Ubuntu 14.04  |  9691.7 | 10193.7 | 13994.9 | 14472.3 |
 
 ### Note
 
