@@ -50,17 +50,19 @@ Below table translates the identifiers:
 | BeagleBone Black  | TI Sitara AM3358/9 | ARMv7-A       | Cortex-A8           | VFPv3-D32 (VFP and NEON)  |
 | Altera Cyclone V5 | 5CSEMA4U23C6N A9   | ARMv7-A       | Cortex-A9 MPcore    | VFPv3-D32 (VFP and NEON)  |
 | Raspberry Pi 3    | Broadcom BCM2837   | ARMv8-A       | Cortex-A53          | ARMv8 (VFP and NEON)      |
+| Raspberry Pi 4    | Broadcom BCM2711   | ARMv8-A       | Cortex-A72          | ARMv8 (VFP and NEON)      |
 
 ## Memory information:
 
-| Board             | RAM     | Type                                  |
-|-------------------|---------|---------------------------------------|
-| Raspberry Pi 1    |  512 MB | LPDDR2 1.2V 450MHz, FBGA168 PoP 32-bit|
-| Raspberry Pi 0W   |  512 MB | LPDDR2 1.2V 450MHz, FBGA168 PoP 32-bit|
-| Raspberry Pi 2    | 1024 MB | LPDDR2 1.2V 450MHz, FBGA168 PoP 32-bit|
-| BeagleBone Black  |  512 MB | DDR3-1600, 400MHz, Micron MT41K256M16HA-125:E |
+| Board             | RAM     | Type                                   |
+|-------------------|---------|----------------------------------------|
+| Raspberry Pi 1    |  512 MB | LPDDR2 1.2V  450MHz, FBGA168 PoP 32-bit|
+| Raspberry Pi 0W   |  512 MB | LPDDR2 1.2V  450MHz, FBGA168 PoP 32-bit|
+| Raspberry Pi 2    | 1024 MB | LPDDR2 1.2V  450MHz, FBGA168 PoP 32-bit|
+| BeagleBone Black  |  512 MB | DDR3-1600,   400MHz, Micron MT41K256M16HA-125:E |
 | Altera Cyclone V5 | 1024 MB | DDR3, 400Mhz 32-bit, ISSI IS43TR16256A|
-| Raspberry Pi 3    | 1024 MB | LPDDR2 1.2V 900MHz, FBGA168 PoP 64-bit|
+| Raspberry Pi 3    | 1024 MB | LPDDR2 1.2V  500MHz, FBGA168 PoP 64-bit|
+| Raspberry Pi 4    | 1,2,4 GB| LPDDR4 1.1V 3200MHz, FBGA168 PoP 64-bit|
 
 ```vcgencmd get_config sdram_freq```
 
