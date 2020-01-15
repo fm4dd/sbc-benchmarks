@@ -25,6 +25,7 @@ echo
 RASPI1FLAGS="-mcpu=arm1176jzf-s -mfloat-abi=hard -mfpu=vfp"
 RASPI2FLAGS="-mcpu=cortex-a7 -mfloat-abi=hard -mfpu=neon-vfpv4"
 RASPI3FLAGS="-mcpu=cortex-a53 -mfloat-abi=hard -mfpu=neon-fp-armv8 -mneon-for-64bits"
+RASPI4FLAGS="-mcpu=cortex-a72 -mtune=cortex-a72 -mfloat-abi=hard -mfpu=neon-fp-armv8 -mneon-for-64bits"
 NANO2FLAGS="-mcpu=cortex-a53"
 CYCLV5FLAGS="-mcpu=cortex-a9 -mfloat-abi=hard -mfpu=neon"
 BBONEBFLAGS="-mcpu=cortex-a8 -mfloat-abi=hard -mfpu=neon"
@@ -42,9 +43,22 @@ case "$CPUHW" in
     RASPI1=(0002 0003 0004 0005 0006 0007 0008 0009 000d 000e 000f 9000c1)
     RASPI2=(a01040 a01041 a21041)
     RASPI3=(a02082 a020a0 a22082 a32082)
-    case "${RASPI1[@]}" in *"$REVID"*) echo "It's a Raspberry Pi with ARMv6 CPU"; SYSFLAGS="$RASPI1FLAGS" ;; esac
-    case "${RASPI2[@]}" in *"$REVID"*) echo "It's a Raspberry Pi with ARMv7 CPU"; SYSFLAGS="$RASPI2FLAGS" ;; esac
-    case "${RASPI3[@]}" in *"$REVID"*) echo "It's a Raspberry Pi with ARMv8 CPU"; SYSFLAGS="$RASPI3FLAGS" ;; esac
+    case "${RASPI1[@]}" in *"$REVID"*) echo "It's a Raspberry Pi 1 with ARMv6 CPU"; SYSFLAGS="$RASPI1FLAGS" ;; esac
+    case "${RASPI2[@]}" in *"$REVID"*) echo "It's a Raspberry Pi 2 with ARMv7 CPU"; SYSFLAGS="$RASPI2FLAGS" ;; esac
+    case "${RASPI3[@]}" in *"$REVID"*) echo "It's a Raspberry Pi 3 with ARMv8 CPU"; SYSFLAGS="$RASPI3FLAGS" ;; esac
+    if [ -z ${SYSFLAGS+x} ]; then echo "We found a unknown Raspberry Pi (Revision: $REVID), exiting."; exit; fi
+    ;;
+# Because of the incorrect /proc/cpuinfo 'Hardware' reporting, we add below and rely on REVID only.
+  *BCM2835)
+    echo "We found a Raspberry Pi."
+    RASPI1=(0002 0003 0004 0005 0006 0007 0008 0009 000d 000e 000f 9000c1)
+    RASPI2=(a01040 a01041 a21041)
+    RASPI3=(a02082 a020a0 a22082 a32082)
+    RASPI4=(a03111 c03111)
+    case "${RASPI1[@]}" in *"$REVID"*) echo "It's a Raspberry Pi 1 with ARMv6 CPU"; SYSFLAGS="$RASPI1FLAGS" ;; esac
+    case "${RASPI2[@]}" in *"$REVID"*) echo "It's a Raspberry Pi 2 with ARMv7 CPU"; SYSFLAGS="$RASPI2FLAGS" ;; esac
+    case "${RASPI3[@]}" in *"$REVID"*) echo "It's a Raspberry Pi 3 with ARMv8 CPU"; SYSFLAGS="$RASPI3FLAGS" ;; esac
+    case "${RASPI4[@]}" in *"$REVID"*) echo "It's a Raspberry Pi 4 with ARMv8 CPU"; SYSFLAGS="$RASPI4FLAGS" ;; esac
     if [ -z ${SYSFLAGS+x} ]; then echo "We found a unknown Raspberry Pi (Revision: $REVID), exiting."; exit; fi
     ;;
   *AM33XX*)
