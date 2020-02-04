@@ -23,6 +23,7 @@ root@susie:~/sbc-bench > bin/stream > results/stream.txt
 | Altera Atlas SoC   | 5CSEMA4U23C6N A9 | ARMv7 |  925 | Ubuntu 16.04  |  935.5 | 1279.6 |  939.0 |  922.4 |
 | Raspberry Pi 3     | Broadcom BCM2837 | ARMv8 | 1200 | Raspbian 8    | 2184.9 | 2177.3 | 2099.0 | 2092.3 |
 | NanoPi NEO 2       | Allwinner H5     | ARMv8 | 1500 | Ubuntu 16.04  | 1848.4 | 1875.8 | 1730.5 | 1731.9 |
+| Raspberry Pi 4     | Broadcom BCM2711 | ARMv8 | 1500 | Raspbian 10   | 3403.4 | 3265.5 | 2918.9 | 2882.6 |
 
 The same benchmark was run on the consumer hardware below to provide a frame of reference:
 

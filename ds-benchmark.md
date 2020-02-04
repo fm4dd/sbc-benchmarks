@@ -23,6 +23,7 @@ root@susie:~/sbc-bench > bin/dhrystone 100000000 > results/dhrystone.txt
 | NanoPi NEO 2       | Allwinner H5     | ARMv8 | 1500 | Ubuntu 16.04  |    5000000.0 | 1.89 |
 | Raspberry Pi 3     | Broadcom BCM2837 | ARMv8 | 1200 | Raspbian 8    |    4347826.0 | 2.06 |
 | Altera Atlas SoC   | 5CSEMA4U23C6N A9 | ARMv7 |  925 | Ubuntu 16.04  |    3703703.8 | 2.28 |
+| Raspberry Pi 4     | Broadcom BCM2711 | ARMv8 | 1500 | Raspbian 10   |   10000000.0 | 3.79 |
 
 
 The same benchmark was run on below consumer hardware to provide a frame of reference:

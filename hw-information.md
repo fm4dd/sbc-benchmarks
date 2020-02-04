@@ -76,5 +76,6 @@ Below table translates the identifiers:
 | BeagleBone Black  | eMMC         | |
 | Altera Cyclone V5 | MicroSD Slot | |
 | Raspberry Pi 3    | MicroSD Slot | 20-25 MB/s|
+| Raspberry Pi 4    | MicroSD Slot | 20-25 MB/s|
 
 ## References

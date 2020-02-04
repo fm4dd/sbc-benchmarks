@@ -44,6 +44,7 @@ All boards above are equipped with ARM-based CPU. ARM currently dominates the ma
 |Altera Atlas SoC|     6596|      7.13|   1923.1|  3703704| 2.28|      935.5|      1279.6|     21.6|      21.3|
 |Raspberry Pi 3  |     7108|      5.92|   2000.0|  4347826| 2.06|     2184.9|      2177.3|     22.8|      10.5|
 |NanoPi NEO 2    |     3442|      2.29|   2381.0|  5000000| 1.89|     1848.4|      1875.8|     21.8|      21.6|
+|Raspberry Pi 4  |    15600|     10.40|   5555.6| 10000000| 3.79|     3403.4|      3265.5|     22.3|      26.1|
 
 ### Details
 

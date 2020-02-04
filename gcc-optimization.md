@@ -41,13 +41,16 @@ Pre-ARMv6, ARMv6-M, and ARMv8-M default to -mno-unaligned-access. -munaligned-ac
 
 ## CPU information for popular ARM-based boards:
 
-| Board             | CPU                | Architecture  | ARM Core            | FPU                       |
-|-------------------|--------------------|---------------|---------------------|---------------------------|
-| Raspberry Pi 1    | Broadcom BCM2835   | ARMv6         | ARM11 (ARM1176JZFS) | VFPv2 (VFP only, no NEON) |
-| Raspberry Pi 2    | Broadcom BCM2836   | ARMv7-A       | Cortex-A7 MPcore    | VFPv4-D32 (VFP and NEON)  |
-| BeagleBone Black  | TI Sitara AM3358/9 | ARMv7-A       | Cortex-A8           | VFPv3-D32 (VFP and NEON)  |
-| Altera Cyclone V5 | 5CSEMA4U23C6N A9   | ARMv7-A       | Cortex-A9 MPcore    | VFPv3-D32 (VFP and NEON)  |
-| Raspberry Pi 3    | Broadcom BCM2837   | ARMv8-A       | Cortex-A53          | ARMv8 (VFP and NEON)      |
+| Board             | CPU                | Architecture | ARM Core            | FPU                       |
+|-------------------|--------------------|--------------|---------------------|---------------------------|
+| Raspberry Pi 1    | Broadcom BCM2835   | ARMv6        | ARM11 (ARM1176JZFS) | VFPv2 (VFP only, no NEON) |
+| Raspberry Pi 2    | Broadcom BCM2836   | ARMv7-A      | Cortex-A7 MPcore    | VFPv4-D32 (VFP and NEON)  |
+| BeagleBone Black  | TI Sitara AM3358/9 | ARMv7-A      | Cortex-A8           | VFPv3-D32 (VFP and NEON)  |
+| Altera Cyclone V5 | 5CSEMA4U23C6N A9   | ARMv7-A      | Cortex-A9 MPcore    | VFPv3-D32 (VFP and NEON)  |
+| Raspberry Pi 3    | Broadcom BCM2837   | ARMv8-A      | Cortex-A53          | ARMv8 (VFP and NEON)      |
+| NanoPi NEO 2      | Allwinner H5       | ARMv8-A      | Cortex-A53          | VFPv4 (VFP and NEON)      |
+| Raspberry Pi 3    | Broadcom BCM2837   | ARMv8-A      | Cortex-A53          | VFPv4 (VFP and NEON)      |
+| Raspberry Pi 4    | Broadcom BCM2711   | ARMv8-A      | Cortex-A72          | VFPv4 (VFP and NEON)      |
 
 ## GCC compiler options for popular ARM-based boards:
 
@@ -58,6 +61,7 @@ Pre-ARMv6, ARMv6-M, and ARMv8-M default to -mno-unaligned-access. -munaligned-ac
 | BeagleBone Black  | -mcpu=cortex-a8 -mfloat-abi=hard -mfpu=neon (alias for neon-vfpv3)      |
 | Altera Cyclone V5 | -mcpu=cortex-a9 -mfloat-abi=hard -mfpu=neon (alias for neon-vfpv3)      |
 | Raspberry Pi 3    | -mcpu=cortex-a53 -mfloat-abi=hard -mfpu=neon-fp-armv8 -mneon-for-64bits |
+| Raspberry Pi 4    | -mcpu=cortex-a72 -mfloat-abi=hard -mfpu=neon-fp-armv8 -mneon-for-64bits |
 
 ## GCC compiler tuning options for popular ARM-based boards:
 
@@ -68,8 +72,23 @@ Pre-ARMv6, ARMv6-M, and ARMv8-M default to -mno-unaligned-access. -munaligned-ac
 | BeagleBone Black  | -mtune=cortex-a8       |
 | Altera Cyclone V5 | -mtune=cortex-a9       |
 | Raspberry Pi 3    | -mtune=cortex-a53      |
+| Raspberry Pi 3    | -mtune=cortex-a72      |
 
 Note that gcc's code optimisation creates code for a specific CPU/board. If that code is copied to another platform, it may perform different (e.g. poorly).
+
+### How to set compiler options
+
+For most projects, setting the environment variable or adding the flags in the Makefile variables will do the trick.
+
+```
+export CFLAGS="-mcpu=cortex-a53 -mfloat-abi=hard -mfpu=neon-fp-armv8 -mneon-for-64bits"
+```
+
+### Note to crypto miners
+
+Starting with the ARMv8 architecture, a crypto acceleration extension has been added. On a Raspberry Pi 3 (Cortex A53), it accelerates AES and SHA1/SHA2. To enable it, use -mcpu=cortex-a53+crypto.
+
+Further crypto support (SHA3, SHA512) gets added from ARMv8.4-A onwards.
 
 ## References
 

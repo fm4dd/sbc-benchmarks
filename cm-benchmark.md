@@ -4,7 +4,7 @@ Date: March 2017
 
 ## Background
 
-CoreMark is a benchmark from the Embedded Microprocessor Benchmark Consortium (EEMBC®). It targets testing a processor’s CPU core for basic pipeline structure, as well as basic read/write, integer, and control operations. (<a href="http://www.eembc.org/coremark/">Link</a>)
+CoreMark is a benchmark from the Embedded Microprocessor Benchmark Consortium (EEMBC®). It targets testing a processor’s CPU core for basic pipeline structure, as well as basic read/write, integer, and control operations. (<a href="http://www.eembc.org/coremark/">Link</a>). Coremark/MHz simply divides the result by CPU frequency and is just a rough indicator (discounts number of cores, as well as frequency scaling).
 
 ## Test commands
 
@@ -23,6 +23,7 @@ root@susie:~/sbc-bench > bin/coremark > results/coremark.txt
 | Altera Atlas SoC   | 5CSEMA4U23C6N A9 | ARMv7 |  925 | Ubuntu 16.04  |     6596 |  7.13 |
 | Raspberry Pi 3     | Broadcom BCM2837 | ARMv8 | 1200 | Raspbian 8    |     7108 |  5.92 |
 | NanoPi NEO 2       | Allwinner H5     | ARMv8 | 1500 | Ubuntu 16.04  |     3441 |  2.29 |
+| Raspberry Pi 4     | Broadcom BCM2711 | ARMv8 | 1500 | Raspbian 10   |    15600 |  10.4 |
 
 The same benchmark was run on the consumer systems below to provide a frame of reference:
 
