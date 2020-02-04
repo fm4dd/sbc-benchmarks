@@ -1,0 +1,69 @@
+processor	: 0
+model name	: ARMv7 Processor rev 3 (v7l)
+BogoMIPS	: 270.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd08
+CPU revision	: 3
+
+processor	: 1
+model name	: ARMv7 Processor rev 3 (v7l)
+BogoMIPS	: 270.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd08
+CPU revision	: 3
+
+processor	: 2
+model name	: ARMv7 Processor rev 3 (v7l)
+BogoMIPS	: 270.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd08
+CPU revision	: 3
+
+processor	: 3
+model name	: ARMv7 Processor rev 3 (v7l)
+BogoMIPS	: 270.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd08
+CPU revision	: 3
+
+Hardware	: BCM2835
+Revision	: c03111
+Serial		: 100000004396a42f
+Model		: Raspberry Pi 4 Model B Rev 1.1
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] CPU: ARMv7 Processor [410fd083] revision 3 (ARMv7), cr=30c5383d
+[    0.000000] CPU: div instructions available: patching division code
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, PIPT instruction cache
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] Memory: 3735592K/4050944K available (8192K kernel code, 661K rwdata, 2352K rodata, 2048K init, 850K bss, 53208K reserved, 262144K cma-reserved, 3264512K highmem)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.001359] CPU: Testing write buffer coherency: ok
+[    0.001773] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+[    0.003434] smp: Bringing up secondary CPUs ...
+[    0.004334] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+[    0.005365] CPU2: thread -1, cpu 2, socket 0, mpidr 80000002
+[    0.006359] CPU3: thread -1, cpu 3, socket 0, mpidr 80000003
+[    0.006491] smp: Brought up 1 node, 4 CPUs
+[    0.006514] CPU: All CPU(s) started in HYP mode.
+[    0.006522] CPU: Virtualization extensions available.
+[    0.017742] VFP support v0.3: implementor 41 architecture 3 part 40 variant 8 rev 0
+[    0.090411] raspberrypi-firmware soc:firmware: Attached to firmware from 2019-09-24 17:34, variant start
+[    0.100122] raspberrypi-firmware soc:firmware: Firmware hash is cd3add54955f8fa065b414d8fc07c525e7ddffc8
+[    0.855194] ledtrig-cpu: registered to indicate activity on CPUs
+[    4.711193] vc4-drm soc:gpu: bound fe600000.firmwarekms (ops vc4_fkms_ops [vc4])
+Distributor ID:	Raspbian
+Description:	Raspbian GNU/Linux 10 (buster)
+Release:	10
+Codename:	buster
