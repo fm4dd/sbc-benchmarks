@@ -24,6 +24,7 @@ Raspberry Pi 2B    | Broadcom BCM2836 | ARMv7 | 0.9x4 | Raspbian 8    |    727 k
 Altera Atlas SoC   | 5CSEMA4U23C6N A9 | ARMv7 | 0.9x2 | Ubuntu 16.04  |  1,016 khash/s |   1.71 khash/s    |
 Raspberry Pi 3B    | Broadcom BCM2837 | ARMv8 | 1.2x4 | Raspbian 8    |  1,407 khash/s |   2.54 khash/s    |
 NanoPi NEO 2       | Allwinner H5     | ARMv8 | 1.5x4 | Ubuntu 16.04  |  1,818 khash/s |   3.13 khash/s    |
+Raspberry Pi 4     | Broadcom BCM2711 | ARMv8 | 1.5x4 | Raspbian 10   |  4,120 khash/s |   7.69 khash/s    |
 
 The same benchmark was run on the consumer hardware below to provide a frame of reference:
 
@@ -34,6 +35,7 @@ Apple MacMini 2007 | Core 2 Duo T7200 | Intel | 2.0x2 | Windows 10 32 |  5,160 k
 Xperia Z4 Tablet   | Snapdragon 810   | ARMv8 | 2.0x4 | Android 6.0   |  5,088 khash/s |   9.70 khash/s    |
 HP laptop zBook 14 | i7-4600U Haswell | Intel | 2.7x2 | Windows 10 64 | 20,000 khash/s |  36.00 khash/s    |
 Linode 4GB VM      | Xeon E5-2680 VM  | Intel | 2.8x1 | Ubuntu 14.04  | 30,000 khash/s |  48.20 khash/s    |
+NUC7  32GB         | i7-10710U        | Intel | 1.1x6 | Ubuntu 20.04  | 70,000 khash/s | 110.30 khash/s    |
 
 ### Notes
 
